@@ -6,7 +6,7 @@
 #    By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 09:53:41 by smayrand          #+#    #+#              #
-#    Updated: 2022/04/11 13:22:31 by smayrand         ###   ########.fr        #
+#    Updated: 2022/04/13 14:49:23 by smayrand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,14 @@ ft_putnbr_fd.c\
 
 OBJS = $(SRCS:.c=.o)
 
+BONUS = ft_lstnew.c\
+ft_lstadd_front.c\
+ft_lstsize.c\
+ft_lstlast.c\
+ft_lstadd_back.c\
+
+BONUS_OBJS = $(BONUS:.c=.o)
+
 RM = rm -f
 
 $(NAME):	$(OBJS)
@@ -60,11 +68,14 @@ $(NAME):	$(OBJS)
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY:	all clean fclean re
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+
+.PHONY:	all clean fclean re bonus
