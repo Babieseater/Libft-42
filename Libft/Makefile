@@ -6,7 +6,7 @@
 #    By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 09:53:41 by smayrand          #+#    #+#              #
-#    Updated: 2022/04/13 14:49:23 by smayrand         ###   ########.fr        #
+#    Updated: 2022/04/14 15:08:05 by smayrand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ ft_striteri.c\
 ft_putchar_fd.c\
 ft_putstr_fd.c\
 ft_putendl_fd.c\
-ft_putnbr_fd.c\
+ft_putnbr_fd.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -57,6 +57,10 @@ ft_lstadd_front.c\
 ft_lstsize.c\
 ft_lstlast.c\
 ft_lstadd_back.c\
+ft_lstdelone.c\
+ft_lstclear.c\
+ft_lstiter.c\
+ft_lstmap.c
 
 BONUS_OBJS = $(BONUS:.c=.o)
 

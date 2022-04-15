@@ -6,7 +6,7 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 13:28:11 by smayrand          #+#    #+#             */
-/*   Updated: 2022/04/06 14:06:48 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/04/15 14:01:22 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(const char *s1)
 	n = 0;
 	while (s1[n])
 		n++;
-	cpy = malloc(sizeof(*cpy) * (n + 1));
+	cpy = malloc(sizeof(char) * (n + 1));
 	if (cpy == NULL)
 		return (NULL);
 	while (i < n)

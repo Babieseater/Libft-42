@@ -6,7 +6,7 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 13:47:19 by smayrand          #+#    #+#             */
-/*   Updated: 2022/04/11 11:29:43 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/04/15 12:25:12 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@ static int	ft_ilen(int nb)
 {
 	int	i;
 
-	if (nb == 0)
-		return (1);
 	i = 0;
-	if (nb < 0)
+	if (nb <= 0)
 		i++;
 	while (nb)
 	{
