@@ -6,14 +6,14 @@
 #    By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 09:53:41 by smayrand          #+#    #+#              #
-#    Updated: 2022/04/14 15:08:05 by smayrand         ###   ########.fr        #
+#    Updated: 2022/04/19 15:46:10 by smayrand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 CC = gcc
-CFLAG = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 
 SRCS = ft_isalpha.c\
 ft_isdigit.c\
