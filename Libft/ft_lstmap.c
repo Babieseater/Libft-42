@@ -6,7 +6,7 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 15:10:26 by smayrand          #+#    #+#             */
-/*   Updated: 2022/04/14 16:42:44 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/04/19 16:37:06 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ft_lstadd_back(&output, ft_lstnew(f(lst->content)));
 		if (ft_lstlast(output) == NULL)
 		{
-			ft_lstdelone(output, *del);
+			ft_lstclear(output, *del);
 			return (output);
 		}
 		lst = lst->next;
